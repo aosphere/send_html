@@ -1,0 +1,1550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEND - Pioneering Web3 Culture</title>
+    <meta name="description" content="SEND is the cultural engine of Web3, merging technology with community creativity. Join us in shaping the future with $SEND.">
+    <meta name="keywords" content="Web3, SEND_ao, Web3, decentralized culture, blockchain, @aoTheComputer, $AO, decentralized tech, innovation, culture, $SEND, AO, aoTheComputer">
+    <meta name="author" content="SEND ao Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://senddao.ar.io">
+    <meta property="og:title" content="SEND_ao - The First Cultural Token of AO">
+    <meta property="og:description" content="Dive into the future of Web3 with SEND_ao, where culture, community, and technology unite to create social liquidity and adoption.">
+    <meta property="og:image" content="https://ylcnubc2jmbxtwh7y5qp3aro7ep2k6557wmmyot26mq2dloaebja.arweave.net/wsTaBFpLA3nY_8dg_YIu-R-le739mMw6evMhoa3AIFI" alt="SEND_ao Logo"> <!-- Replace with actual image URL -->
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://senddao.ar.io">
+    <meta name="twitter:title" content="SEND_ao - Pioneering Web3 Culture">
+    <meta name="twitter:description" content="SEND_ao introduces $SEND, the token driving cultural engagement and adoption within AO's ecosystem.">
+    <meta name="twitter:image" content="https://ylcnubc2jmbxtwh7y5qp3aro7ep2k6557wmmyot26mq2dloaebja.arweave.net/wsTaBFpLA3nY_8dg_YIu-R-le739mMw6evMhoa3AIFI" alt="SEND_ao Logo"> <!-- Replace with actual image URL -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://ft4w2tfxgmd7bnqgxg7yicsxiuk5pnzzk2w4ongbhslpbai2z5yq.arweave.net/LPltTLczB_C2Brm_hApXRRXXtzlWrcc0wTyW8IEaz3E" type="image/png">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://senddao.ar.io">
+    
+    <!-- Theme Color for Android -->
+    <meta name="theme-color" content="#030303">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://rd6v6maie2vw5ofjwy2mi755totbn2svgpv6kgpsedmhhpthzafa.arweave.net/iP1fMAgmq264qbY0xH-9m6YW6lUz6-UZ8iDYc75nyAo" alt="SEND_ao Logo"> <!-- Replace with actual icon URL -->
+    
+    <!-- Ensure Proper Rendering and Touch Zooming -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --neon-purple: #BF00FF;
+            --deep-purple: #6A0DAD;
+            --electric-blue: #00B7FF;
+            --background-dark: #0A0A0A;
+            --text-light: #E0E0E0;
+            /* --neon-green: #00FF00; */
+}
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.95), rgba(0, 0, 0, 0.9));
+            color: var(--text-light);
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #matrixBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        #matrixBackground text {
+            animation: matrixRain 5s linear infinite, fadeInOut 3s linear infinite;
+        }
+
+        @keyframes matrixRain {
+            0% { opacity: 0.1; transform: translateY(-100%); }
+            100% { opacity: 0.1; transform: translateY(100vh); }
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Custom Cursor */
+        body {
+            cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="%23BF00FF" d="M2.01 21L23 12L2.01 3L2 10l15 2l-15 2z"/></svg>'), auto;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            filter: drop-shadow(0 0 10px #BF00FF);
+            transition: filter 0.3s;
+        }
+
+        .nav-logo img:hover {
+            filter: drop-shadow(0 0 20px #BF00FF);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: var(--neon-green);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, transform 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--electric-blue);
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--neon-green);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* CTA Button in Nav */
+        
+        .cta-nav {
+            background: linear-gradient(45deg, var(--neon-purple), var(--electric-blue));
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #000;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #BF00FF;
+        }
+
+        .cta-nav:hover {
+            background: linear-gradient(45deg, var(--electric-blue), var(--deep-purple));
+            color: #fff;
+            transform: translateY(-2px);
+            
+    
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .cta-button {
+                /* Optional: If you want to set a max-width or fixed size for very small screens */
+                max-width: 200px;
+                width: 80%; /* Makes button full width on smaller screens */
+                font-size: 4vw; /* Larger font for readability on small screens */
+                padding: 3vw 6vw; /* Adjust padding for smaller screens */
+            }
+        }
+        /* Mobile Nav Toggle */
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin-bottom: 5px;
+            background: var(--neon-purple);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            .hamburger span {
+        background: white; /* Make sure the lines are visible */
+    }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .nav-toggle {
+                display: block;
+                z-index: 1001;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'), linear-gradient(145deg, #1e1e1e, #000000);
+            color: var(--neon-green);
+            min-height: 100vh;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 0 0 10px var(--electric-blue);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: var(--text-light);
+        }
+
+        .terminal {
+            font-family: 'Courier New', monospace;
+            color: var(--neon-purple);
+            font-size: 5rem;
+            margin-bottom: 90px;
+        }
+
+        .prefix {
+            display: inline-block;
+        }
+
+        .cursor {
+            display: inline-block;
+            background-color: var(--neon-purple);
+            width: 4px;
+            height: 4rem;
+            margin-left: 5px;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            0%, 49% {
+                background-color: var(--neon-purple);
+            }
+            50%, 100% {
+                background-color: transparent;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            color: #000;
+            background: linear-gradient(90deg, var(--neon-purple), var(--electric-blue));
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 20px #BF00FF;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, var(--electric-blue), var(--deep-purple));
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #BF00FF;
+        }
+
+        @media (max-width: 768px) {
+            .cta-nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                max-width: 200px;
+                display: inline;
+            }
+        }
+
+        /* About Section */
+        .about {
+            flex: 1;
+            padding: 50px 20px;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.8), rgba(106, 13, 173, 0.1), rgba(0, 0, 0, 0.9));
+            position: relative;
+        }
+
+        .about h2 {
+            color: var(--neon-green);
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px var(--electric-blue);
+            font-size: 2.5rem;
+        }
+
+        .about p {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.3rem;
+        }
+
+        /* Add particle effect to about section */
+        .about #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        /* rocket fly */
+
+        @keyframes rocketFly {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(360deg); }
+    }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            flex: 1;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(10, 10, 10, 0.7));
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(106, 13, 173, 0.3);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-img {
+            width: 250px; /* Makes the image as wide as the card */
+            height: auto; /* Maintains aspect ratio */
+            max-height: 200px; /* Adjust this to limit how tall the image can get */
+            border-radius: 10px;
+            margin-bottom: 10px; /* Space between image and text */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, var(--neon-green), var(--electric-blue));
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.1;
+            transform: rotate(0deg);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--neon-purple);
+        }
+        .features .feature-card:nth-child(2) {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--neon-purple);
+            transition: none; /* Remove transition to make it immediate */
+        }
+
+        /* banner */
+
+        .full-width-banner {
+        width: 100%;
+        border-radius: 20px; /* Adds rounded corners to the image */
+        text-align: center;
+        margin-bottom: 20px; 
+        overflow: hidden; 
+        object-fit: cover; 
+    }
+
+    .full-page-image {
+        width: 100%;
+        height: auto; /* Maintains the aspect ratio of the image */
+        z-index: 2; /* Ensures the image is above the glow */
+        position: relative; /* Required for z-index to work */
+    }
+    .full-width-banner::before {
+        bottom: -10px;
+        z-index: 1; /* Places the glow behind the image */
+        background: radial-gradient(circle at center, var(--neon-purple), transparent 70%);
+        filter: blur(15px);
+        opacity: 0.7;
+        border-radius: 20px; /* Matches the border-radius of the image for consistent look */
+    }
+    
+        /* Roadmap Section */
+        .roadmap {
+            padding: 50px 20px;
+            color: var(--neon-white);
+            text-shadow: 0 0 15px var(--electric-blue);
+            font-size: 2.5rem;
+            /* background: linear-gradient(45deg, rgba(0, 255, 0, 0.05), rgba(0, 0, 255, 0.05)); */
+            text-align: center;
+            flex: 1;
+            
+        }
+
+        .roadmap-section {
+            --neon-green: #00FF00;
+    }
+    .timeline-line {
+                background: var(--neon-purple);
+                width: 2px;
+                position: absolute;
+                left: 50%;
+                height: 93%;
+                transform: translateX(-50%);
+            }
+    .roadmap-section .phase-status {
+        background: var(--neon-green);
+    }
+    .roadmap-section .phase-milestones li::before {
+        color: var(--neon-green);
+    }
+
+    .roadmap-item {
+        margin: 5px 0;
+    }
+
+    .status-live {
+        color: var(--neon-green);
+    }
+    @media (max-width: 768px) {
+    .roadmap-phase {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phase-card {
+        width: 100%;
+        left: 0 !important;
+        margin: 3rem 0;
+        padding: 2% 3%;
+        overflow-x: hidden;
+    }
+
+    .phase-card::before, .phase-card::after {
+        display: none;
+    }
+
+    .timeline-line {
+        left: 20px;
+        background: var(--neon-purple);
+        /* Adjust the height if necessary */
+        height: 93%;
+    }
+
+    .phase-status {
+        position: static;
+        top: 5px;
+        right: 10px;
+    }
+
+    .roadmap-phase h3 {
+        font-size: 1.2rem;
+    }
+
+    .roadmap-phase p, .roadmap-phase li, .phase-milestones li {
+        word-wrap: break-word;
+        word-break: break-word;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .phase-milestones {
+        flex: 1;
+    }
+
+    .roadmap-container h2 {
+        font-size: 2rem;
+    }
+}
+
+    .roadmap-title {
+        color: var(--deep-purple);
+        font-size: 3rem;
+        margin-bottom: 40px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .roadmap-title span {
+        position: relative;
+        z-index: 2;
+    }
+
+    .title-glow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        animation: glowPulse 3s infinite;
+    }
+
+    @keyframes glowPulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+    }
+
+    .roadmap-timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .roadmap-subtitle {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-top: -10px; /* Adjust as needed to bring it closer to the title */
+    margin-bottom: 30px; /* Space before the timeline */
+    text-align: center;
+    line-height: 1.4;
+}
+
+    .roadmap-phase {
+        background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5), rgba(10, 10, 10, 0.7));
+        border-left: 6px solid var(--neon-purple);
+        margin: 20px 0;
+        padding: 20px;
+        width: 80%;
+        text-align: left;
+        border-radius: 10px;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        animation: fadeIn 1s ease-in;
+    }
+
+    .roadmap-phase:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(191, 0, 255, 0.3);
+    }
+
+    .roadmap-phase::before {
+        content: attr(data-phase);
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        font-size: 10rem;
+        color: rgba(191, 0, 255, 0.1);
+        z-index: 0;
+    }
+
+    .roadmap-phase h3 {
+        color: var(--electric-blue);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .roadmap-phase p {
+        color: var(--text-light);
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .roadmap-phase ul {
+        list-style-type: none;
+        padding-left: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .roadmap-phase li {
+        color: var(--text-light);
+        margin: 10px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .status-live {
+        color: var(--neon-green);
+        font-weight: bold;
+    }
+    .roadmap-timeline .roadmap-phase:first-child .status-live {
+            color: var(--neon-green);
+            font-weight: bold;
+            transform: scale(1.05);
+            transition: none; /* Ensure the effect is immediate */
+        }
+
+    .send-highlight {
+        color: var(--neon-purple);
+        font-weight: bold;
+        animation: neonBlink 1s infinite alternate;
+    }
+
+    @keyframes neonBlink {
+        from { text-shadow: 0 0 5px var(--neon-purple); }
+        to { text-shadow: 0 0 15px var(--neon-purple), 0 0 20px var(--neon-purple); }
+    }
+
+    .roadmap-conclusion {
+        margin-top: 40px;
+        color: var(--text-light);
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .roadmap-phase {
+            width: 100%;
+        }
+    }
+        .roadmap h2 {
+            color: var(--neon-green);
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px var(--neon-blue);
+            font-size: 2.5rem;
+        }
+
+        .roadmap h2::before, .roadmap h2::after {
+            content: '';
+            position: absolute;
+            width: 120px; /* Adjust the length of the glow */
+            height: 2px; /* Thickness of the glow */
+            background-color: var(--electric-blue);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .roadmap h2::before {
+            filter: blur(5px);
+            opacity: 0.7;
+        }
+
+        .roadmap h2::after {
+            filter: blur(10px);
+            opacity: 0.5;
+        }
+
+        .roadmap h2 span {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            animation: neonGlow 2s infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 0 0 5px var(--neon-purple), 0 0 20px var(--neon-purple), 0 0 30px var(--neon-purple), 0 0 40px var(--neon-purple), 0 0 70px var(--neon-purple), 0 0 80px var(--neon-purple), 0 0 100px var(--neon-purple), 0 0 150px var(--neon-purple);
+            }
+            100% {
+                text-shadow: 0 0 10px var(--electric-blue), 0 0 25px var(--electric-blue), 0 0 40px var(--electric-blue), 0 0 60px var(--electric-blue), 0 0 100px var(--electric-blue), 0 0 130px var(--electric-blue), 0 0 160px var(--electric-blue), 0 0 200px var(--electric-blue);
+            }
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            .roadmap h2 {
+                font-size: 2rem; /* Smaller for mobile screens */
+            }
+
+            .roadmap h2::before, .roadmap h2::after {
+                width: 80px;
+            }
+        }
+
+
+        .roadmap-section {
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, rgba(0, 255, 0, 0.05), rgba(0, 0, 255, 0.05));
+        }
+
+        .roadmap-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .phase-card {
+            position: relative;
+            width: 45%;
+            padding: 2rem;
+            margin: 4rem 0;
+            background: rgba(var(--neon-purple), 0.9);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            box-shadow: 0 0 15px #BF00FF;
+        }
+
+        .phase-card:nth-child(odd) {
+            left: 0;
+        }
+
+        .phase-card:nth-child(even) {
+            left: 55%;
+        }
+
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: var(--neon-purple);
+            border: 3px solid var(--neon-blue);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .phase-card:nth-child(odd)::before {
+            right: -55px;
+        }
+
+        .phase-card:nth-child(even)::before {
+            left: -55px;
+        }
+
+        .phase-card::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--neon-purple);
+            border-radius: 50%;
+            box-shadow: 0 0 15px var(--electric-blue);
+        }
+
+        .phase-card:nth-child(odd)::after {
+            right: -50px;
+        }
+
+        .phase-card:nth-child(even)::after {
+            left: -50px;
+        }
+
+        .phase-status {
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            padding: 0.5rem 1rem;
+            background: var(--electric-blue);
+            color: var(--background-dark);
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            box-shadow: 0 0 15px var(--electric-blue);
+        }
+
+        .phase-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 60px #BF00FF;
+        }
+
+        .phase-card h3 {
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .phase-milestones {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .phase-milestones li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .phase-milestones li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--neon-purple);
+            font-size: 1.2rem;
+        }
+
+        .phase-progress {
+            height: 4px;
+            background: #ff9100;
+            margin: 1rem 0;
+            border-radius: 2px;
+        }
+
+        .phase-progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--neon-purple), var(--neon-blue));
+            width: 0%;
+            transition: width 1s ease;
+        }
+
+        .phase-card.active .phase-progress-bar {
+            width: 66%;
+        }
+
+        .phase-card.completed .phase-progress-bar {
+            width: 100%;
+        }
+
+        .timeline-particle {
+            position: absolute;
+            pointer-events: none;
+            background: var(--electric-blue);
+            border-radius: 50%;
+            opacity: 5;
+        }
+
+        @media (max-width: 768px) {
+            .phase-card {
+                width: 100%;
+                left: 0 !important;
+                margin: 3rem 0;
+            }
+            
+            .phase-card::before,
+            .phase-card::after {
+                display: none;
+            }
+            
+            @media (max-width: 768px) {
+                    .phase-milestones li, 
+                    .roadmap-phase p, 
+                    .roadmap-phase h3 {
+                        word-wrap: break-word;
+                    }
+                }
+
+            @media (max-width: 768px) {
+                .phase-card {
+                    padding: 5% 4%; /* Adjust based on your design needs */
+                }
+            }
+            .timeline-wrapper {
+                min-height: 800px;
+            }
+            @media (max-width: 768px) {
+                .timeline-line {
+                    left: 20px;
+                    background: var(--neon-purple); /* Different color for mobile */
+                }
+            }
+            @media (max-width: 768px) {
+            .roadmap-phase h3 {
+                font-size: 1.2rem;
+            }
+            .roadmap-phase p, .roadmap-phase li {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+        }
+            .phase-status {
+                right: 10px;
+            }
+            .phase-milestones li {
+                word-wrap: break-word;
+             }
+
+             .phase-card {
+                overflow-x: hidden;
+            }
+
+            .roadmap-container h2 {
+                font-size: 2rem;
+            }
+
+            .phase-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .phase-milestones li {
+                font-size: 1rem;
+            }
+            .phase-card {
+                overflow: visible;
+            }
+        }
+        
+
+        /* Community Section */
+        .community {
+            /* Use the image as background */
+            background: url('https://ddbqiolb55npiblewzsfe5nsqbyylsjy67oiekbn5v2qbdge752a.arweave.net/GMMEOWHvWvQFZLZkUnWygHGFyTj33IIoLe11AIzE_3Q') no-repeat center center fixed; 
+            background-size: cover; /* Cover the entire section */
+            padding: 50px 20px;
+            text-align: center;
+            flex: 1;
+            /* Add a semi-transparent overlay to make text more readable */
+            position: relative;
+        }
+
+        .community::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+            z-index: 0;
+        }
+
+        .community * {
+            position: relative; /* Ensure all children are above the overlay */
+            z-index: 1;
+        }
+
+        .community h2 {
+            color: var(--neon-green);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .community p {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .community a {
+            color: var(--neon-green);
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: all 0.3s;
+        }
+
+        .community a:hover {
+            color: var(--deep-purple);
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: var(--background-dark);
+            color: var(--deep-purple);
+            border-top: 2px solid var(--neon-purple);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--neon-purple);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--electric-blue);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                font-size: 3rem;
+                padding: 20px;
+            }
+            .features, .roadmap, .community {
+                padding: 20px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://ylcnubc2jmbxtwh7y5qp3aro7ep2k6557wmmyot26mq2dloaebja.arweave.net/wsTaBFpLA3nY_8dg_YIu-R-le739mMw6evMhoa3AIFI" alt="SEND_ao Logo" class="navbar-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="https://aosphere.ar.io" target="_blank" class="send-highlight">aoSphere</a></li>
+                <li><a href="https://network-portal.app/#/gateways/BsOXPQVCOQaWA3HgjFb2ZtsdccxmGvfv2YxAiEUgQIY" target="_blank" class="send-highlight">stake $ARIO</a></li>
+                <li><a href="https://dexi.ar.io/#/pool/V-aAEX7HVu8AMOSqIhAR6myLrCZh2DOhX12OSYv5ypc" target="_blank" class="cta-nav">Buy $SEND</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="terminal">
+                    <span class="prefix">SEND ao</span><span class="cursor"></span>
+                </div>
+                <h1 id="typed-text"></h1>
+                <p>Elevating Web3 through Cultural Intelligence</p>
+                <a href="https://x.com/@@SEND_ao" target="_blank" class="cta-button">Join the Movement</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div id="particles-js"></div>
+            <h2>About SEND_ao</h2>
+            <p>SEND is the first decentralized culture token, built on the only tech capable of breaking blockchain limits: aoTheComputer. Born from aoSphere, SEND is more than just innovation, it’s creativity in motion and a movement that refuses to slow down. This isn’t just a token. It’s a legacy we’re building together.</p>
+            <br>
+            <br>
+            <div>
+                <h2>SEND it!</h2>
+
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="feature-card">
+                <h3 style="font-size: 1.5rem;">Community First</h3>
+                <img src="https://d3xsw5olevcjtuxxufw6rhodlrpfg4ahb6xfyaq6wvizgh5bxmhq.arweave.net/Hu8rdcslRJnS96Ft6J3DXF5TcAcPrlwCHrVRkx-huw8" alt="Community" class="card-img">
+                <p>At SEND, community isn’t a buzzword; it’s our foundation. We’re building a space where everyone, from early adopters to new entrants, feels valued, heard, and empowered. This isn’t just about holding a token; it’s about being part of a family that’s shaping the culture of the most innovative decentralized compute system ever built.</p>
+            </div>
+            <div class="feature-card">
+                <h3 style="font-size: 1.5rem;">The Culture Token of AO</h3>
+                <img src="https://ta3hft6io6tzcghptshq47hc4wqvs7neioguf7hrejl3jxr57drq.arweave.net/mDZyz8h3p5EY75yPDnzi5aFZfaRDjUL88SJXtN49-OM" alt="SEND token" class="card-img">
+                <p>$SEND isn’t just another token, it’s the heartbeat of the AO ecosystem. We are the movement, the energy, and the voice that amplifies the groundbreaking innovation happening on aoTheComputer. While technology builds the future, culture makes it unstoppable.
+                    Owning $SEND means being part of the most dominant, culture-driven community in decentralized computing, where culture, innovation, and purpose collide. We’re not here to follow trends, we’re here to set them.</p>
+            </div>
+            <div class="feature-card">
+                <h3 style="font-size: 1.5rem;">Powered by <a href="http://aosphere.ar.io" class="send-highlight">aoSphere</a></h3>
+                <img src="https://uaf5njsi4flskuxyzaczeyufikf4ipjsyarz43ogqfkrxonyxjgq.arweave.net/oAvWpkjhVyVS-MgFkmKFQovEPTLAI55txoFVG7m4uk0" alt="Powered by aoSphere" class="card-img">
+                <p>SEND is just the beginning. As the first project under aoSphere, it sets the stage for what’s to come. Community-driven tools, decentralized membership systems, and AI-enhanced experiences. amPortal (Atomic Membership Portal) is next, redefining how communities operate in Web3.
+                    aoSphere is the backbone, but SEND is the fire that ignites everything. This is a long-term vision, and we’re here to build, innovate, and dominate together.</p>
+            </div>
+        </section>
+
+
+        <!-- Roadmap  -->
+        <section class="section" id="roadmap">
+            <h2 class="roadmap">
+                <span>Roadmap</span>
+            </h2>
+            <p class="roadmap-subtitle">Beyond SEND – The AO Ecosystem Evolution<br>
+                A vision that redefines decentralized innovation and community-driven culture. Every step taken is powered by <a href="http://aosphere.ar.io" class="send-highlight">aoSphere</a></p>
+                <div style="display: flex; justify-content: center; align-items: center; height: 2vh;">
+                    <svg width="100" height="100" viewBox="0 0 100 100" style="display: block; margin: 0 auto;">
+                        <g transform="translate(50,50)">
+                            <!-- Rocket Body -->
+                            <path 
+                                d="M-10,-20 L10,-20 L10,20 L-10,20 Z"
+                                fill="#ff6f00"
+                                stroke="#333"
+                                stroke-width="2"
+                            />
+                            <!-- Fin -->
+                            <path 
+                                d="M-10,20 L0,30 L10,20 Z"
+                                fill="#ff6f00"
+                                stroke="#333"
+                                stroke-width="2"
+                            />
+                            <!-- Flame -->
+                            <path 
+                                d="M-5,20 L0,35 L5,20 Z"
+                                fill="#FFD700"
+                            >
+                                <animateTransform 
+                                    attributeName="transform" 
+                                    type="translate" 
+                                    from="0 0" 
+                                    to="0 10" 
+                                    dur="0.5s" 
+                                    repeatCount="indefinite"
+                                />
+                                <animate 
+                                    attributeName="opacity"
+                                    from="1"
+                                    to="0"
+                                    dur="0.5s"
+                                    repeatCount="indefinite"
+                                />
+                            </path>
+                        </g>
+                    </svg>            
+                </div>
+            <div class="roadmap-container">
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Phase 1 -->
+                    <div class="phase-card active">
+                        <span class="phase-status">Live</span>
+                        <h3>Phase 1: The Cultural Foundation (Now)</h3>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar" style="width: 85%"></div>
+                        </div>
+                        <ul class="phase-milestones">
+                            <li><strong>Status:</strong> <span class="status-live">Fully live and operational.</span></li>
+                            <li>Establish $SEND as the culture token of the AO ecosystem.</li>
+                            <li>Build the most elite and dominant community in decentralized computing.</li>
+                            <li>Execute aggressive Twitter campaigns, partnerships, and giveaways to expand the SENDer community.</li>
+                            <li>Onboard users into the AO ecosystem through culture-driven initiatives.</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Phase 2 -->
+                    <div class="phase-card">
+                        <span class="phase-status">Next Up</span>
+                        <h3>Phase 2: Strengthening the Ecosystem (Early 2024 - Ongoing)</h3>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar" style="width: 30%"></div>
+                        </div>
+                        <ul class="phase-milestones">
+                            <li>Expand the SEND brand into the AO ecosystem.</li>
+                            <li>Incentivize $SEND adoption with staking, governance perks, and exclusive rewards.</li>
+                            <li>Form strategic partnerships with AO-native projects.</li>
+                            <li>Push $SEND as a cultural access key for selected AO platforms.</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Phase 3 -->
+                    <div class="phase-card">
+                        <span class="phase-status">Building</span>
+                        <h3>Phase 3: DuskCyphers NFT Whitelist (Mid 2024 - Ongoing)</h3>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar" style="width: 15%"></div>
+                        </div>
+                        <ul class="phase-milestones">
+                            <li><strong>What is DuskCyphers?</strong> An independent NFT project by <a href="https://aosphere.ar.io/" target="_blank" class="send-highlight">aoSphere</a> that embodies the AO culture.</li>
+                            <li><strong>Exclusive whitelist for $SEND Holders:</strong> Early access and special allocations for $SEND holders.</li>
+                            <li>$SEND holders get front-row access to the DuskCyphers drop.</li>
+                            <li>DuskCyphers is more than art. The NFTs serve as keys to exclusive perks, staking boosts, and SEND-driven benefits.</li>
+                            <li><strong>Cultural Significance:</strong> Strengthening AO’s identity through a fusion of art, community, and tokenomics.</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Phase 4 -->
+                    <div class="phase-card">
+                        <span class="phase-status">Planning</span>
+                        <h3>Phase 4: amPortal – The Membership Evolution (Late 2024 - Beyond)</h3>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar" style="width: 5%"></div>
+                        </div>
+                        <ul class="phase-milestones">
+                            <li><strong>Estimated Launch:</strong> Q4 2024</li>
+                            <li><strong>What is amPortal?</strong> A decentralized membership portal developed by <a href="https://aosphere.ar.io/" target="_blank" class="send-highlight">aoSphere</a> designed to provide exclusive access, roles, and privileges across the AO ecosystem.</li>
+                            <li><strong>$SEND Holders Benefit:</strong> Priority access, exclusive roles, and deeper integration within AO communities.</li>
+                            <li><strong>Token/NFT-Gated Access:</strong> amPortal enables seamless verification for memberships, events, and gated content.</li>
+                            <li><strong>Governance Tools:</strong> A new way to interact with the AO ecosystem through community-driven decisions.</li>
+                            <li><strong>AI-Enhanced Memberships:</strong> Smart rewards, automated governance, and predictive engagement models.</li>
+                            <li><strong>Objective:</strong> While amPortal is an independent aoSphere product, SEND holders will be at the center of its ecosystem.</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Phase 5 -->
+                    <div class="phase-card">
+                        <span class="phase-status">Vision</span>
+                        <h3>Phase 5: The SEND Economy & Expansion (2025 & Beyond)</h3>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar" style="width: 0%"></div>
+                        </div>
+                        <ul class="phase-milestones">
+                            <li>Monetization & Sustainable Growth: Launch community-driven initiatives using $SEND as the currency of culture.</li>
+                            <li>Integrate $SEND into AO-based platforms for tipping, rewards, and participation incentives.</li>
+                            <li>Expand $SEND’s use cases beyond AO, spreading the culture across ecosystems.</li>
+                            <li>Transition towards a decentralized community-driven movement where $SEND holders shape the future.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section> <div class="roadmap-conclusion">
+            <p><strong>Conclusion:</strong> This is just the beginning. SEND and aoSphere are the cultural and infrastructural backbone of the AO ecosystem. Every product, every initiative, every move we make is designed to empower the community and push the boundaries of decentralized innovation.</p>
+            <p>We’re here to build. We’re here to lead. We’re here to <span class="send-highlight">SEND</span>.</p>
+            <svg width="100" height="100" viewBox="0 0 100 100" style="display: block; margin: 0 auto;">
+                <g transform="translate(50,50)">
+                    <!-- Rocket Body -->
+                    <path 
+                        d="M-10,-20 L10,-20 L10,20 L-10,20 Z"
+                        fill="#ff6f00"
+                        stroke="#333"
+                        stroke-width="2"
+                    />
+                    <!-- Fin -->
+                    <path 
+                        d="M-10,20 L0,30 L10,20 Z"
+                        fill="#ff6f00"
+                        stroke="#333"
+                        stroke-width="2"
+                    />
+                    <!-- Flame -->
+                    <path 
+                        d="M-5,20 L0,35 L5,20 Z"
+                        fill="#FFD700"
+                    >
+                        <animateTransform 
+                            attributeName="transform" 
+                            type="translate" 
+                            from="0 0" 
+                            to="0 10" 
+                            dur="0.5s" 
+                            repeatCount="indefinite"
+                        />
+                        <animate 
+                            attributeName="opacity"
+                            from="1"
+                            to="0"
+                            dur="0.5s"
+                            repeatCount="indefinite"
+                        />
+                    </path>
+                </g>
+            </svg>            
+        </div>
+    </section>
+
+<svg style="display:none;">
+  <defs>
+    <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:var(--neon-purple);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:var(--electric-blue);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
+
+<section class="community" id="community">
+    <h2>Community and Support</h2>
+    <p>Stake your <a href="https://network-portal.app/#/gateways/BsOXPQVCOQaWA3HgjFb2ZtsdccxmGvfv2YxAiEUgQIY" target="_blank" class="send-highlight">$ARIO</a> tokens with us.</p>
+    <p>Join us, get support, and grow with @SEND_ao:</p>
+    <a href="https://x.com/@@SEND_ao" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://discord.gg/tJT7mtAz7x" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://github.com/aosphere" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</section>
+    </div>
+    <footer>
+        <p>© 2025 SEND_ao. | <a href="http://aosphere.ar.io" target="_blank">aoSphere</a> . | All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <svg id="matrixBackground">
+        <rect width="100%" height="100%" fill="black" />
+        <text x="50%" y="0" font-family="Courier New" font-size="15" fill="#00FF00" text-anchor="middle">
+            <tspan dy="0.2em">The Space of Web3, The Art of Computation,</tspan>
+            <tspan dy="1.4em">The Language of Decentralization, The Future of Collaboration,</tspan>
+            <tspan dy="1.6em">The Memory of Bits, The Synergy of Blockchain,</tspan>
+            <tspan dy="1.8em">The Melodony of Transparency, The Magic of Minting,</tspan>
+            <tspan dy="2em">The Sanctity of Smart Contracts, The Poetry of Peer review</tspan>
+        </text>
+        <text x="30%" y="0" font-family="Courier New" font-size="15" fill="#00FF00" text-anchor="middle">
+            <tspan dy="0.2">The Power of Community, The Vision of Decentralization,</tspan>
+            <tspan dy="1.2em">The Beat of Innovation, The Art of Participation</tspan>
+        </text>
+    </svg>
+    <svg style="display:none;">
+        <defs>
+          <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:var(--neon-purple);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:var(--electric-blue);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+           document.addEventListener('DOMContentLoaded', function() {
+      // Function to handle animations
+      function animateOnScroll(selector, options) {
+          const elements = document.querySelectorAll(selector);
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if(entry.isIntersecting) {
+                      entry.target.style.opacity = 1;
+                      entry.target.style.transform = 'translateY(0)';
+                  } else {
+                      // Reset for when elements exit the viewport if needed
+                      entry.target.style.opacity = 0;
+                      entry.target.style.transform = 'translateY(50px)';
+                  }
+              });
+          }, options);
+  
+          elements.forEach(element => {
+              element.style.opacity = 0;
+              element.style.transform = 'translateY(50px)';
+              element.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+              observer.observe(element);
+          });
+      
+  
+          // Optionally, apply to other elements in other sections
+          // animateOnScroll('.some-other-class', { threshold: [0.1, 0.5] });
+          const timelineWrapper = document.querySelector('.timeline-wrapper');
+          for(let i = 0; i < 50; i++) {
+              const particle = document.createElement('div');
+              particle.className = 'timeline-particle';
+              particle.style.width = Math.random() * 4 + 'px';
+              particle.style.height = particle.style.width;
+              particle.style.left = Math.random() * 100 + '%';
+              particle.style.top = Math.random() * 100 + '%';
+              particle.style.animation = `float ${Math.random() * 8 + 4}s infinite`;
+              timelineWrapper.appendChild(particle);
+          }
+      }
+       // Apply to roadmap phases
+       animateOnScroll('.phase-card', { threshold: [0.1, 0.5] });
+  
+      // Apply to feature cards
+      animateOnScroll('.feature-card', { threshold: [0.1, 0.5] });
+  });
+  
+          // Add floating animation
+          const style = document.createElement('style');
+          style.textContent = `
+          @keyframes float {
+              0%, 100% { transform: translate(0, 0); }
+              25% { transform: translate(2px, 2px); }
+              50% { transform: translate(-2px, -3px); }
+              75% { transform: translate(3px, -2px); }
+          }
+          `;
+          document.head.appendChild(style);
+  
+          document.addEventListener("DOMContentLoaded", () => {
+              new Typed("#typed-text", {
+                  strings: ["Redefining Culture in Web3.", "Powered by Community, Amplified by Innovation.", "The Heartbeat of Decentralized Creativity."],
+                  typeSpeed: 40,
+                  backSpeed: 25,
+                  loop: true
+              });
+          
+              particlesJS('particles-js', {
+                  "particles": {
+                      "number": {
+                          "value": 80,
+                          "density": {
+                              "enable": true,
+                              "value_area": 800
+                          }
+                      },
+                      "color": {
+                          "value": ["#00FF00", "#00B7FF", "#BF00FF"] 
+                      },
+                      "shape": {
+                          "type": "circle",
+                          "stroke": {
+                              "width": 0,
+                              "color": "#000000"
+                          },
+                          "polygon": {
+                              "nb_sides": 5
+                          },
+                          "image": {
+                              "src": "img/github.svg",
+                              "width": 100,
+                              "height": 100
+                          }
+                      },
+                      "opacity": {
+                          "value": 0.5,
+                          "random": false,
+                          "anim": {
+                              "enable": false,
+                              "speed": 1,
+                              "opacity_min": 0.1,
+                              "sync": false
+                          }
+                      },
+                      "size": {
+                          "value": 3,
+                          "random": true,
+                          "anim": {
+                              "enable": false,
+                              "speed": 40,
+                              "size_min": 0.1,
+                              "sync": false
+                          }
+                      },
+                      "line_linked": {
+                          "enable": true,
+                          "distance": 150,
+                          "color": "#ffffff",
+                          "opacity": 0.4,
+                          "width": 1
+                      },
+                      "move": {
+                          "enable": true,
+                          "speed": 6,
+                          "direction": "none",
+                          "random": false,
+                          "straight": false,
+                          "out_mode": "out",
+                          "bounce": false,
+                          "attract": {
+                              "enable": false,
+                              "rotateX": 600,
+                              "rotateY": 1200
+                          }
+                      }
+                  },
+                  "interactivity": {
+                      "detect_on": "canvas",
+                      "events": {
+                          "onhover": {
+                              "enable": true,
+                              "mode": "repulse"
+                          },
+                          "onclick": {
+                              "enable": true,
+                              "mode": "push"
+                          },
+                          "resize": true
+                      },
+                      "modes": {
+                          "grab": {
+                              "distance": 400,
+                              "line_linked": {
+                                  "opacity": 1
+                              }
+                          },
+                          "bubble": {
+                              "distance": 400,
+                              "size": 40,
+                              "duration": 2,
+                              "opacity": 8,
+                              "speed": 3
+                          },
+                          "repulse": {
+                              "distance": 200,
+                              "duration": 0.4
+                          },
+                          "push": {
+                              "particles_nb": 4
+                          },
+                          "remove": {
+                              "particles_nb": 2
+                          }
+                      }
+                  },
+                  "retina_detect": true
+              });
+          });
+  
+          function toggleNav() {
+              const navLinks = document.querySelector('.nav-links');
+              const navToggle = document.querySelector('.nav-toggle');
+              const isActive = navLinks.classList.contains('active');
+              navLinks.classList.toggle('active', !isActive);
+              navToggle.classList.toggle('active', !isActive);
+          };
+         
+      </script>
+  </body>
+  </html>
